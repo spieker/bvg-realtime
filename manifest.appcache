@@ -13,6 +13,10 @@ http://www.overpass-api.de/api/interpreter?data=[out:json];rel[network=VBB][oper
 lib/components-font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0
 lib/components-font-awesome/fonts/fontawesome-webfont.ttf?v=4.1.0
 lib/components-font-awesome/fonts/fontawesome-webfont.svg?v=4.1.0
+img/touch-icon-iphone.png
+img/touch-icon-ipad.png
+img/touch-icon-iphone-retina.png
+img/touch-icon-ipad-retina.png
 
 NETWORK:
 *
