@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="manifest.appcache">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -22,17 +22,16 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+    <!--script src="cordova.js"></script-->
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
   <body ng-app="starter" ng-controller="MainCtrl">
-
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-        <button class="button button-clear button-positive" ng-click="findBusStop()"><em class="fa fa-crosshairs"></em></button>
+      <ion-header-bar class="bar-stable bar-bvg">
+        <h1 class="title">BVG Realtime</h1>
+        <button class="button button-clear button-dark" ng-click="findBusStop()"><em class="fa fa-crosshairs"></em></button>
       </ion-header-bar>
       <ion-content>
             <ion-list>
@@ -47,7 +46,7 @@
   <ion-modal-view>
     <ion-header-bar>
     <h1 class="title">{{currentItem.tags.name}}</h1>
-        <button class="button button-clear button-positive" ng-click="closeModal()">&#10006;</button>
+        <button class="button button-clear button-dark" ng-click="closeModal()">&#10006;</button>
     </ion-header-bar>
     <iframe id="info" src="" style="width: 100%; height: 100%; position: absolute;"></iframe>
     </ion-modal-view>

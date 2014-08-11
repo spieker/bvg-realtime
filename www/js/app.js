@@ -43,13 +43,24 @@ angular.module('starter', ['ionic'])
     $scope.modal.remove();
   });
 
+  //window.opApiResult = function(data) {
+  //  alert(1);
+  //  stations = data.elements;
+  //}
+
   $.ajax({
-    url: 'http://www.overpass-api.de/api/interpreter?data=[out:json];rel[network=VBB][operator=BVG];node(r);out;'
+    url: 'http://www.overpass-api.de/api/interpreter?data=[out:json];rel[network=VBB][operator=BVG];node(r);out;&jsonp=opApiResult',
+    type: 'get',
+    dataType: 'jsonp',
+    jsonp: false,
+    jsonpCallback: 'opApiResult',
+    cache: true
   }).success(function(data) {
-    stations = data.elements;
-  }).error(function(error) {
     debugger;
-  })
+    stations = data.elements;
+  }).error(function() {
+    debugger;
+  });
 
   $scope.findBusStop = function() {
     try {

@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# 2014-08-01.3
+
+CACHE:
+lib/components-font-awesome/css/font-awesome.css
+lib/ionic/css/ionic.css
+css/style.css
+lib/jquery/dist/jquery.js
+lib/Geolib/dist/geolib.js
+lib/ionic/js/ionic.bundle.js
+js/app.js
+http://www.overpass-api.de/api/interpreter?data=[out:json];rel[network=VBB][operator=BVG];node(r);out;&jsonp=opApiResult
+lib/components-font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0
+lib/components-font-awesome/fonts/fontawesome-webfont.ttf?v=4.1.0
+lib/components-font-awesome/fonts/fontawesome-webfont.svg?v=4.1.0
+
+NETWORK:
+*
