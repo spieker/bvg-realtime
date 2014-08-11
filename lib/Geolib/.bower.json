@@ -1,0 +1,31 @@
+{
+  "name": "Geolib",
+  "main": "dist/geolib.js",
+  "homepage": "https://github.com/manuelbieh/Geolib",
+  "authors": [
+    "Manuel Bieh <github@manuelbieh.de>"
+  ],
+  "description": "Library to perform geo specific tasks",
+  "keywords": [
+    "geolocation",
+    "geo",
+    "distance"
+  ],
+  "license": "LGPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "321926384f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "321926384f5c87d0aeb69c68ef1c43df6af30d79"
+  },
+  "_source": "git://github.com/manuelbieh/Geolib.git",
+  "_target": "master",
+  "_originalSource": "manuelbieh/Geolib"
+}
