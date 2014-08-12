@@ -59,7 +59,7 @@ angular.module('starter', ['ionic'])
     stations = data.elements;
     $scope.findBusStop();
   }).error(function() {
-    debugger;
+    alert('Error fetching bus stops!');
   });
 
   $scope.findBusStop = function() {
@@ -98,6 +98,8 @@ angular.module('starter', ['ionic'])
 
         $scope.result = result.slice(0, 10);
         $scope.$apply()
+      }, function(error) { // on geo position error
+        alert('Location error: '+error.message);
       });
     } catch(e) {
       alert(e);
