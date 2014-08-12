@@ -56,8 +56,8 @@ angular.module('starter', ['ionic'])
     jsonpCallback: 'opApiResult',
     cache: true
   }).success(function(data) {
-    debugger;
     stations = data.elements;
+    $scope.findBusStop();
   }).error(function() {
     debugger;
   });
