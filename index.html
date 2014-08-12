@@ -49,11 +49,13 @@
 <script id="bvg-realtime-popover.html" type="text/ng-template">
   <ion-modal-view>
     <ion-header-bar>
-    <h1 class="title">{{currentItem.tags.name}}</h1>
-        <button class="button button-clear button-dark" ng-click="closeModal()">&#10006;</button>
+      <h1 class="title">{{currentItem.tags.name}}</h1>
+      <button class="button button-clear button-dark" ng-click="closeModal()">&#10006;</button>
     </ion-header-bar>
-    <iframe id="info" src="" style="width: 100%; height: 100%; position: absolute;"></iframe>
-    </ion-modal-view>
+    <div class="iframe-wrapper">
+      <iframe id="info" src=""></iframe>
+    </div>
+  </ion-modal-view>
 </script>
   </body>
 </html>
