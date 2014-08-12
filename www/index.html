@@ -34,6 +34,7 @@
   <body ng-app="starter" ng-controller="MainCtrl">
     <ion-pane>
       <ion-header-bar class="bar-stable bar-bvg">
+        <button class="button button-clear button-dark" ng-click="openAbout()"><em class="fa fa-info-circle"></em></button>
         <h1 class="title">BVG Realtime</h1>
         <button class="button button-clear button-dark" ng-click="findBusStop()"><em class="fa fa-crosshairs"></em></button>
       </ion-header-bar>
@@ -55,6 +56,29 @@
     <div class="iframe-wrapper">
       <iframe id="info" src=""></iframe>
     </div>
+  </ion-modal-view>
+</script>
+
+<script id="info-popover.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">About</h1>
+      <button class="button button-clear button-dark" ng-click="closeAbout()">&#10006;</button>
+      </ion-header-bar>
+      <ion-content>
+      <h1>BVG Realtime</h1>
+      <p>
+        Github: <a href="http://github.com/spieker/bvg-realtime" target="_blank">http://github.com/spieker/bvg-realtime</a>
+        </p>
+        <p>
+        <a href="https://flattr.com/submit/auto?user_id=spieker&url=http%3A%2F%2Fspieker.github.io%2Fbvg-realtime" target="_blank"><img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a>
+      </p>
+
+      <h1>OpenStreetMap</h1>
+      <p>Bus stop data from OpenStreetMap</p>
+      <p>Link: <a href="http://www.openstreetmap.org/" target="_blank">http://www.openstreetmap.org/</a></p>
+      <p>Lizenz: <a href="http://www.openstreetmap.org/copyright/en" target="_blank">http://www.openstreetmap.org/copyright/en</a></p>
+      </ion-content>
   </ion-modal-view>
 </script>
   </body>

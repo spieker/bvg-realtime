@@ -23,18 +23,35 @@ angular.module('starter', ['ionic'])
   $scope.result = [];
   $scope.currentItem = null;
 
+  $ionicModal.fromTemplateUrl('info-popover.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modalAbout = modal;
+  });
+
   $ionicModal.fromTemplateUrl('bvg-realtime-popover.html', {
     scope: $scope,
     animation: 'slide-in-up'
   }).then(function(modal) {
     $scope.modal = modal;
   });
+
   $scope.openModal = function(item) {
     $scope.currentItem = item;
     $scope.modal.show().then(function() {
       $('#info').attr('src', 'http://mobil.bvg.de/IstAbfahrtzeiten/index/mobil?input='+item.tags.name);
     });
   };
+
+  $scope.openAbout = function() {
+    $scope.modalAbout.show()
+  };
+
+  $scope.closeAbout = function() {
+    $scope.modalAbout.hide()
+  };
+
   $scope.closeModal = function() {
     $scope.modal.hide();
   };
