@@ -40,7 +40,7 @@ angular.module('starter', ['ionic'])
   $scope.openModal = function(item) {
     $scope.currentItem = item;
     $scope.modal.show().then(function() {
-      $('#info').attr('src', 'http://mobil.bvg.de/IstAbfahrtzeiten/index/mobil?input='+item.tags.name);
+      $('#info').attr('src', 'http://fahrinfo.bvg.de/Fahrinfo/bin/stboard.bin/dn?start=1&boardType=depRT&input='+item.tags.name);
     });
   };
 
